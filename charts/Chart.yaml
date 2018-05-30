@@ -1,0 +1,10 @@
+name: kube-serv
+description: A Helm charts for Kubernetes application
+version: 0.5.3
+home: https://my.domain/
+sources:
+  - https://github.com/oleg-kalashnikov/kube-serv
+maintainers:
+  - name: Oleg Kalashnikov
+    email: oleg.kalashnikov@icloud.com
+engine: gotpl

@@ -1,0 +1,12 @@
+FROM scratch
+
+ENV KUBESERV_LOCAL_HOST 0.0.0.0
+ENV KUBESERV_LOCAL_PORT 8080
+ENV KUBESERV_LOG_LEVEL 0
+
+EXPOSE $KUBESERV_LOCAL_PORT
+
+COPY certs /etc/ssl/certs/
+COPY bin/linux-amd64/kube-serv /
+
+CMD ["/kube-serv"]
