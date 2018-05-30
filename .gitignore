@@ -1,3 +1,6 @@
 vendor
+certs
+.coverprofile
+coverage.txt
 .vscode
 bin
